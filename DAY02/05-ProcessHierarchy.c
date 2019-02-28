@@ -19,19 +19,21 @@ int main()
         printf("Fork failed");
     else if (pid == 0) //Child process
     {
-        pid_t pid = fork();
-        if (pid == 0)
+        pid_t pid2 = fork();
+        if ( pid2 < 0 )
+            printf("fork #2 failed");
+        else if (pid2 == 0)
         {
-            // fork();
-            // printf("\n%d", getpid());
-            // printf("\n%d", getppid());
+            pid_t pid3 = fork();
+            printf("\npid = %d", getpid());
+            printf("\nppid = %d", getppid());
         }
         printf("\n%d", getpid());
         printf("\n%d", getppid());
     }
     else
     {
-        // printf("\nParent\t%d", getpid());
+        printf("\nParent\t%d", getpid());
     }
     return 0;
 }
