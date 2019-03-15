@@ -17,7 +17,7 @@ void strrev(char *str)
 		i++;
 	}
 }
-int main(int argc, char *argv)
+int main(int argc, char **argv)
 {
 	const int MAX = 100;
 	char str[MAX];
