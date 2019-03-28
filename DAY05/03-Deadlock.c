@@ -1,10 +1,15 @@
 /**
- * Deadlock Demonstration
+ * ------------------------
+ *  Deadlock Demonstration
+ * ------------------------
  * Idea:
- * @TODO
+ * Deadlocks happen when processes acquire some resources, none of them
+ * are ready the give up the resources.
  * 
  * Explanation:
- * @TODO
+ * Basically both of the process1 and process2 are waiting for each other
+ * to give up their resources. And they wait forever.
+ * 
  */
 #include <stdio.h>
 #include <pthread.h>

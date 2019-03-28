@@ -1,7 +1,13 @@
 /**
- * Mutex Locks
+ * -------------
+ *  Mutex Locks
+ * -------------
  * Explanation:
- * @TODO
+ * To fix the issue described in the previous program, we can use the
+ * concept of mutex. Mutex is used to check whether someone is already making
+ * changes to the critical section variable.
+ * If someone is changing variables, then wait for them to finish, and only
+ * after that READ THE UPDATED VALUE.
  * 
  */
 #include <stdio.h>
